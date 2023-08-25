@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* div {
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            border: 1px solid black;
+        } */
+        div[class*="box"]{
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            border: 1px solid black;
+            color: aliceblue;
+        }
+        .box-1{
+            background-color: crimson;
+        }
+        .box-2{
+            background-color: rgb(217, 20, 220);
+        }
+        .box-3{
+            background-color: rgb(20, 20, 220);
+        }
+        .box-4{
+            background-color: rgb(106, 0, 192);
+        }
+        .box-5{
+            background-color: rgb(4, 238, 113);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Attribute Selector</h1>
+    <hr>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5</div>
+
+    <hr>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam deserunt et quaerat totam aut soluta
+        nobis velit id, iusto, est minus nulla obcaecati harum doloremque facere rem esse ratione.</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam deserunt et quaerat totam aut soluta
+        nobis velit id, iusto, est minus nulla obcaecati harum doloremque facere rem esse ratione.</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam deserunt et quaerat totam aut soluta
+        nobis velit id, iusto, est minus nulla obcaecati harum doloremque facere rem esse ratione.</div>
+
+</body>
+
+</html>
