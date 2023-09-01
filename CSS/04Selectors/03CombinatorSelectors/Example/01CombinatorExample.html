@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+
+
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px dashed blue;
+        }
+        .col-50{
+            width: 50%;
+        }
+        h1{
+
+            font-size: 50px
+            
+        }
+        h1+p{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        h2~p{
+            font-size: 20px;
+        }
+        .col-50>p{
+            background-color: crimson;
+            color: aliceblue;
+        }
+        .row p{
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Heading</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
+        corrupti inventore accusamus non obcaecati ipsa architecto velit
+        cupiditate blanditiis illum iusto nobis rerum eaque recusandae maxime,
+        possimus, dolor nemo minima.
+      </p>
+      <div class="row">
+        <div class="col-50">
+          <h2>Hey bro I'm Sub-Hedaing</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            deleniti?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            deleniti?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            deleniti?
+          </p>
+        </div>
+        <div class="col-50-2">
+          <h2>Hey bro I'm Sub-Hedaing</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            deleniti?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            deleniti?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+            deleniti?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

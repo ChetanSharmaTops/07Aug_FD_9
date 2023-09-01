@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        .parent>p{
+            background-color: rgb(239, 115, 140);
+            color: rgb(0, 128, 240);
+            font-size: 30px;
+            border: 5px dashed green;
+        }
+        .parent{
+            border: 5px solid red;
+        }
+        .child{
+            border: 5px dotted blue;
+        }
+        .child>p{
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector (>)</h1>
+    <div class="parent">
+        Parent
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="child">
+            Child ka child
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
