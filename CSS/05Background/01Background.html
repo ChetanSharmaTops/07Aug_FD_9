@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background In CSS</title>
+    <style>
+      div {
+        height: 500px;
+        margin: 10px;
+      }
+      .background-attachment {
+        border: 5px dashed red;
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+      }
+      .background-clip {
+        border: 5px dashed red;
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        /* background-clip: padding-box; */
+        /* background-clip: content-box; */
+        
+      }
+      .background-origin {
+        border: 5px dashed red;
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        box-sizing: border-box;
+        padding: 100px;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+      }
+      .background-color {
+        border: 5px dashed red;
+        background-color: teal;
+        color: aliceblue;
+      }
+      .background-image {
+        border: 5px dashed red;
+
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+      }
+      .background-position {
+        /* color: aliceblue; */
+        border: 5px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: top;
+        background-position: right;
+        background-position: bottom;
+        background-position: left;
+        background-position: center;
+        background-position: 30% 60%;
+      }
+      .background-repeat {
+        border: 5px dashed red;
+        color: aliceblue;
+
+        background-image: url(../../Images/banner.jpg);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: round;
+        background-repeat: space;
+      }
+      .background-size {
+        
+        border: 5px dashed red;
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-size: contain;
+        /* background-size: 300px; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background In CSS</h1>
+    <hr />
+    <li>background-attachment</li>
+    <li>background-clip</li>
+    <li>background-origin</li>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-position</li>
+    <li>background-repeat</li>
+    <li>background-size</li>
+    <hr />
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+  </body>
+</html>
