@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding Box</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        .margin{
+            background-color: teal;
+            border: 1px solid red;
+            color: khaki;
+            margin: 100px; /* All four Direction */
+            margin: 100px 200px; /* top-bottom = 100px , right-left = 200px */
+            margin: 100px 200px 300px; /* top = 100px , right-left = 200px , bottom - 300px*/
+            margin: 100px 200px 300px 400px; /* top = 100px , right = 200px , bottom - 300px, left- 400px*/
+            
+        }
+        .padding{
+            background-color: khaki;
+            color: teal;
+            border: 1px solid red;
+            padding: 100px; /* All four Direction */
+            padding: 100px 200px; /* top-bottom = 100px , right-left = 200px */
+            padding: 100px 200px 300px; /* top = 100px , right-left = 200px , bottom - 300px*/
+            padding: 100px 200px 300px 400px; /* top = 100px , right = 200px , bottom - 300px, left- 400px*/
+        }
+        div[class*="box"]{
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border: 5px solid blueviolet;
+            padding: 20px;
+        }
+        .border-box{
+            box-sizing: border-box;
+            /* Total Width => width - 100px - padding - 20*2 - border - 5*2 = > 50px */
+            /* Total height => width - 100px - padding - 20*2 - border - 5*2 = > 50px */
+        }
+        .content-box{
+            box-sizing: content-box;
+            /* Total Width => width - 100px + padding - 20*2 + border - 5*2 = > 150px */
+            /* Total height => width - 100px + padding - 20*2 + border - 5*2 = > 150px */
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Hello</h1> -->
+    <!-- <hr> -->
+    <div class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt numquam aliquam exercitationem quia recusandae veritatis dolores necessitatibus magnam architecto labore consequatur nihil voluptatem dolorem error, totam magni dolor nam.</div>
+    <hr>
+    <div class="padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ut optio fugit enim neque eligendi perferendis ad vel ea temporibus perspiciatis non dignissimos aspernatur dolorem, iste iusto expedita ratione. Error.</div>
+    <hr>
+    <div class="border-box">border-box</div>
+    <div class="content-box">content-box</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
