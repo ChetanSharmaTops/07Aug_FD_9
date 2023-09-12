@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+      img {
+        width: 100%;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+      }
+      .col-50 {
+        width: 50%;
+      }
+      .col-25 {
+        width: 25%;
+      }
+      .col-33 {
+        width: 33.33%;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h2>Hello</h2>
+      <h2>Hey</h2>
+      <h2>Hey</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-50"><img src="../../Images/banner.jpg" alt="" /></div>
+        <div class="col-50">Lorem</div>
+      </div>
+      <div class="row">
+        <div class="col-25"><img src="../../Images/banner.jpg" alt="" /></div>
+        <div class="col-25">
+          Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          suscipit deserunt ullam. Non, suscipit. Voluptate praesentium, aliquid
+          aut molestias, impedit, nam suscipit obcaecati delectus ex nisi nemo
+          consequuntur quod quasi?
+        </div>
+        <div class="col-25"><img src="../../Images/banner.jpg" alt="" /></div>
+        <div class="col-25">
+          Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          suscipit deserunt ullam. Non, suscipit. Voluptate praesentium, aliquid
+          aut molestias, impedit, nam suscipit obcaecati delectus ex nisi nemo
+          consequuntur quod quasi?
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-33"><img src="../../Images/banner.jpg" alt="" /></div>
+        <div class="col-33">Lorem</div>
+        <div class="col-33"><img src="../../Images/banner.jpg" alt="" /></div>
+
+      </div>
+    </div>
+  </body>
+</html>
