@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+      }
+      nav {
+        background-color: crimson;
+        color: aliceblue;
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .row,
+      ul {
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        /* height: 300px; */
+        align-items: baseline;
+        align-items: center;
+        align-items: flex-end;
+        align-items: stretch;
+        gap: 50px;
+      }
+      .row {
+        padding: 10px 20px;
+        font-size: 30px;
+      }
+      li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="logo">Logo</div>
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+          <div class="search"><i class="fa-solid fa-bars"></i></div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
