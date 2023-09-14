@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>rgba property</title>
+    <style>
+        h1 {
+            color: green;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        div {
+            background: rgb(0, 151, 19);
+            padding: 10px;
+            text-align:justify;
+        }
+             
+        div.first {
+            /*setting alpha = 0.1*/
+            background: rgba(0, 151, 19, 0.1);
+        }
+             
+        div.second {
+            /*setting alpha = 0.3*/
+            background: rgba(0, 151, 19, 0.3);
+        }
+             
+        div.third {
+            /*setting alpha = 0.6*/
+            background: rgba(0, 151, 19, 0.6);
+        }
+        .box{
+            background: url(../Images/banner.jpg)no-repeat center center/cover;
+            width: 500px;
+            height: 500px;
+            opacity: 0.5;
+            -webkit-text-fill-color: brown;
+
+        }
+        .wrap {
+  width: 100%;
+  background: #000 none repeat scroll 0% 0%;
+}
+.image {
+  background-image: url("https://pbs.twimg.com/profile_banners/1550273796/1372363601/1500x500");
+  background-size: cover;
+  opacity: 0.8;
+  height: 100vh;
+  max-height: 350px;
+  min-height: 200px;
+}
+.text {
+  color: #FFF;
+  font-weight: 900;
+}
+    </style>
+</head>
+ 
+<body>
+    <h2>Using RGBA color values:</h2>
+   
+    <div class="first">
+        <p>This paragraph is shown at 10% opacity.</p>
+    </div>
+   
+    <div class="second">
+        <p>This paragraph is shown at 30% opacity.</p>
+    </div>
+   
+    <div class="third">
+        <p>This paragraph is shown at 60% opacity.</p>
+    </div>
+   
+    <div>
+        <p>This is default.</p>
+    </div>
+    <hr>
+
+    <div class="box">
+        <h1>Hello Mayur</h1>
+    </div>
+    <hr>
+    <div class="wrap">
+        <div class="image">
+          <div class="text">
+            <p>I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE
+              YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU I LOVE YOU</p>
+          </div>
+        </div>
+      </div>
+</body>
+ 
+</html>
