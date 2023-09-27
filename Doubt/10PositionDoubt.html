@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Doubt</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        body{
+            background-color: crimson;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        div[class*="box"]{
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+        }
+        .fixed{
+            position: fixed;
+            top: 200px;
+            left: 550px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(134, 226, 43);
+            font-size: 50px;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(221, 7, 245);
+            font-size: 50px;
+            text-align: center;
+            color: aliceblue;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(90, 7, 245);
+            font-size: 50px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .box-odd{
+            position: absolute;
+            background-color: rgb(0, 250, 179);
+            top: 0;
+            right: 80px;
+            z-index: 2;
+        }
+        .box-even{
+            position: absolute;
+            background-color: rgb(0, 32, 242);
+            top: 0;
+            left: 80px;
+        }
+        .box{
+            background-color: teal;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>NavBar</nav>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="fixed">Fixed Position</div>
+        <div class="box">Box-1 </div>
+        <div class="box-odd">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box-even">Box-4</div>
+    </div>
+
+</body>
+</html>

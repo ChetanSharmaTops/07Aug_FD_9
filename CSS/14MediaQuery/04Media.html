@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        body{
+            background-color: crimson;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            color: khaki;
+            font-size: 50px;
+        }
+
+
+        /* media query  */
+
+
+        @media (max-width: 576px) { 
+            .container{
+                flex-direction: column;
+                /* gap: 50px; */
+            }
+            .box{
+                margin: 20px auto;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello</div>
+        <div class="box">Hey</div>
+        <div class="box">Bye</div>
+    </div>
+</body>
+</html>
