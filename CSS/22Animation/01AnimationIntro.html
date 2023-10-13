@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+            animation-name: deepak;
+            animation-duration: 10s;
+            /* animation-iteration-count: 5; */
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: step-end; */
+
+        }
+
+
+        /* @keyframes magic {
+            from{
+                background-color: teal;
+                margin-left: 0px;
+            }
+            to{
+                background-color: crimson;
+                margin-left: 500px;
+            }
+        } */
+        @keyframes deepak {
+            0%{
+                background-color: teal;
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            20%{
+                background-color: crimson;
+                margin-left: 0px;
+                margin-top: 400px;
+            }
+            40%{
+                background-color: rgb(43, 106, 173);
+                margin-left: 300px;
+                margin-top: 400px;
+            }
+            60%{
+                background-color: rgb(182, 169, 84);
+                margin-left: 300px;
+                margin-top: 0px;
+            }
+            80%{
+                background-color: rgb(171, 14, 195);
+                margin-left: 600px;
+                margin-top: 0px;
+            }
+            100%{
+                background-color: rgb(0, 0, 0);
+                margin-top: 400px;
+                margin-left: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

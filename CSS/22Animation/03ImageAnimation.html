@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+            animation-name: circle;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+        }
+        .box-1{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+            animation-name: circle-1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+
+        }
+
+    
+        @keyframes circle {
+            0%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            20%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+                
+                margin-left: 0px;
+                margin-top: 400px;
+            }
+            40%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-left: 300px;
+                margin-top: 400px;
+            }
+            60%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-left: 300px;
+                margin-top: 0px;
+            }
+            80%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-left: 600px;
+                margin-top: 0px;
+            }
+            100%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-top: 400px;
+                margin-left: 600px;
+            }
+        }
+        @keyframes circle-1 {
+            0%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+            20%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+                
+                margin-right: 0px;
+                margin-bottom: 400px;
+            }
+            40%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-right: 300px;
+                margin-bottom: 400px;
+            }
+            60%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-right: 300px;
+                margin-bottom: 0px;
+            }
+            80%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-right: 600px;
+                margin-bottom: 0px;
+            }
+            100%{
+                background: url(../../Images/Army.jpg) no-repeat center center/cover;
+
+                margin-bottom: 400px;
+                margin-right: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box-1"></div>
+</body>
+</html>
