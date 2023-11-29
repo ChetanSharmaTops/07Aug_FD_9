@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method in JS</title>
+</head>
+<body>
+    <script>
+        let a = "    Namaste Bharat   "
+        console.log(a);
+        console.log(a[0]);
+        console.log(a.length);
+        console.log(a.indexOf('B'));    // Returns the index within the calling String object of the 
+        //                                 first occurrence of searchValue, or -1 if not found. 
+        console.log(a.indexOf('b'));    // By default -1
+        console.log(a.concat(' Mata'));
+        console.log(a.charAt(8));
+        console.log(a.charCodeAt(8));   // Returns a number that is the UTF-16 code unit value at the given index.
+        console.log(a.replace('Namaste', 'Jai Ho').concat(' Mata'));
+        console.log(a.toUpperCase());
+        console.log(a.toLowerCase());
+        console.log(a.trim());    // Remove Space from starting and ending
+
+
+    </script>
+</body>
+</html>
