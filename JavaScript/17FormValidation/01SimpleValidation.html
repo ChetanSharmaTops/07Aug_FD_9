@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Validation</title>
+</head>
+<body>
+    <h1>Simple Form Validation</h1>
+    <hr>
+    <label for="uname">User Name</label>
+    <input type="text" name="uname" id="uname" onblur="handleUserName()">
+    <span id="error1"></span>
+    <br><br>
+    <label for="upass">User Pass</label>
+    <input type="password" name="upass" id="upass" onblur="handleUserPass()">
+    <span id="error2"></span>
+    <br><br>
+    <label for="uemail">User Pass</label>
+    <input type="email" name="uemail" id="uemail" onblur="handleUserEmail()">
+    <span id="error3"></span>
+    <br><br>
+    <label for="umobile">User Pass</label>
+    <input type="tel" name="umobile" id="umobile" onblur="handleUserMobile()">
+    <span id="error4"></span>
+    <br><br>
+
+
+    <!-- Script Start Here  -->
+
+    <script>
+        function handleUserName() {
+            let UserName = document.getElementById("uname").value;
+            console.log(UserName);
+            if (UserName == "") {
+                document.getElementById('error1').innerText = "Please Enter Your Name"
+                console.log('User Name is empty');
+            }
+            else{
+                document.getElementById('error1').innerText = " "
+                console.log('User Name is ' + UserName);
+            }
+        }
+        function handleUserPass() {
+            let UserPass = document.getElementById("upass").value;
+            console.log(UserPass);
+            if (UserPass == "") {
+                document.getElementById('error2').innerText = "Please Enter Your Password"
+                console.log('User Pass is empty');
+            }
+            else{
+                document.getElementById('error2').innerText = " "
+                console.log('User Pass is ' + UserPass);
+            }
+        }
+        function handleUserEmail() {
+            let UserEmail = document.getElementById("uemail").value;
+            console.log(UserEmail);
+            if (UserEmail == "") {
+                document.getElementById('error3').innerText = "Please Enter Your Email"
+                console.log('User Email is empty');
+            }
+            else{
+                document.getElementById('error3').innerText = " "
+                console.log('User Email is ' + UserEmail);
+            }
+        }
+        function handleUserMobile() {
+            let UserMobile = document.getElementById("umobile").value;
+            console.log(UserMobile);
+            if (UserMobile == "") {
+                document.getElementById('error4').innerText = "Please Enter Your Mobile"
+                console.log('User Mobile is empty');
+            }
+            else{
+                document.getElementById('error4').innerText = " "
+                console.log('User Mobile is ' + UserMobile);
+            }
+        }
+    </script>
+</body>
+</html>

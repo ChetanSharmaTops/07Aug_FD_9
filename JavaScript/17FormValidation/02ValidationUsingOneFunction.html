@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Using One Function</title>
+  </head>
+  <body>
+    <h1>Validation Using One Function</h1>
+    <hr />
+    <input
+      type="text"
+      name="first"
+      id="first"
+      onblur="handleValidation(this, 'error1', 'User Name')"
+    />
+    <span id="error1"></span>
+    <br /><br />
+    <input
+      type="password"
+      name="second"
+      id="second"
+      onblur="handleValidation(this, 'error2', 'User Password')"
+    />
+    <span id="error2"></span>
+    <br /><br />
+    <input
+      type="tel"
+      name="third"
+      id="third"
+      onblur="handleValidation(this, 'error3', 'User Mobile')"
+    />
+    <span id="error3"></span>
+    <br /><br />
+    <input
+      type="email"
+      name="fourth"
+      id="fourth"
+      onblur="handleValidation(this, 'error4', 'User Email')"
+    />
+    <span id="error4"></span>
+
+    <script>
+      // let inpData = document.getElementById('first')
+      // console.log(inpData);
+
+      function handleValidation(kruti,Arma, mansi) {
+        if (kruti.value == "") {
+          console.log("Please enter valid " + mansi);
+          document.getElementById(Arma).innerText =
+            "Please enter valid " + mansi;
+        } else {
+          console.log("");
+          document.getElementById(Arma).innerText = "";
+        }
+      }
+    </script>
+  </body>
+</html>
