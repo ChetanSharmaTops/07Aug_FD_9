@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      // even number and odd number
+
+      // for (let index = 1; index <= 10; index = index + 2) {
+      // // for (let index = 0; index <= 10; index = index + 2) {
+      //    console.log(index );
+
+      // }
+      let n = 10;
+
+      let space = " ";
+      for (let i = 0; i < n; i++) {
+        for (let k = 0; k < n - i; k++) {
+          space += " ";
+        }
+        for (let j = 0; j < i; j++) {
+          //   document.write(j);
+          space += "*";
+        }
+        space += "\n";
+        // document.write(i);
+        // document.write("<br>");
+      }
+      console.log(space);
+
+      // change in loop
+
+      let a = 10;
+      let b = '&nbsp;' 
+      for (let i = 0; i < a; i++) {
+        for (let k = 0; k < a - i; k++) {
+            document.write(b+b )
+        }
+        for (let j = 0; j < i; j++) {
+            document.write(j)
+
+        }
+
+        document.write(i);
+        document.write("<br>");
+      }
+
+    </script>
+  </body>
+</html>
