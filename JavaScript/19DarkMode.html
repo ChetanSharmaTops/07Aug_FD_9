@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+    </style>
+  </head>
+  <body id="body">
+    <button onclick="darkMode()">DarkMode</button>
+    <h1>Dark Mode</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea
+      unde vero sapiente rerum pariatur ab quasi. Suscipit neque exercitationem
+      nulla temporibus. Voluptas, esse. Beatae numquam quam reprehenderit
+      dignissimos eum.
+    </p>
+
+
+    <script>
+        let colorChange = document.getElementById('body');
+        let isFirstColor = true;
+        function darkMode() {
+
+            if (isFirstColor) {
+                colorChange.style.backgroundColor = 'black'
+                colorChange.style.color = 'white'
+                
+            }
+            else{
+                colorChange.style.backgroundColor = 'crimson'
+                colorChange.style.color = 'white'
+
+            }
+            
+            isFirstColor = !isFirstColor;
+        }
+    </script>
+  </body>
+</html>

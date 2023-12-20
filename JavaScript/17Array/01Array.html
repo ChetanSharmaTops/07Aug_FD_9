@@ -16,18 +16,37 @@
         // single variable name, and has members for performing common array operations.
 
 
-        let marks = [50,60,78,50,90]
+        let arr = [50,60,70,{name:"Chetan", email: "chetan@tops.com"}, false ,80,90];
 
-        console.log(marks);
-        console.log(marks.length);
-        console.log(marks.push(10));  // adding item at the end of an array
-        console.log(marks);
-        console.log(marks.pop());   // The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
-        console.log(marks);
-        console.log(marks.shift());  // The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.
-        console.log(marks.unshift(45));  // The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.
-        console.log(marks.reverse());   // reverse an array
-        console.log(marks.sort());   // sorting an array in asscending order
+        console.log(arr);
+        console.log(arr[4]);
+        console.log(typeof arr);
+        console.log(arr.length);
+        console.log(arr.indexOf(20));
+        console.log(arr.push(10));
+        console.log(arr);
+        console.log(arr.pop());
+        console.log(arr);
+        console.log(arr.shift());
+        console.log(arr);
+        console.log(arr.unshift(100));
+        console.log(arr);
+
+        arr.forEach(element => {
+           console.log(element); 
+        });
+
+        console.log(arr.indexOf(100));
+      
+        console.log(arr.toString());
+        // console.log(arr.reverse());
+        // console.log(arr.sort());
+
+        
+
+
+
+    
 
 
 
