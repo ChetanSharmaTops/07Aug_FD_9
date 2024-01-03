@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean</title>
+  </head>
+  <body>
+
+    <h1>Boolean</h1>
+    <p>Booleans are returned as-is.</p>
+    <ul>
+       <li> undefined turns into false.</li>
+       <li> null turns into false.</li>
+       <li> 0, -0, and NaN turn into false; other numbers turn into true.</li>
+       <li> 0n turns into false; other BigInts turn into true.</li>
+       <li> The empty string "" turns into false; other strings turn into true.</li>
+       <li> Symbols turn into true.</li>
+       <li> All objects become true.</li>
+    </ul>
+    <script>
+      const bNoParam = new Boolean();
+      console.log(bNoParam);
+      const bZero = new Boolean(0);
+      console.log(bZero);
+
+      const bNull = new Boolean(null);
+      console.log(bNull);
+
+      const bEmptyString = new Boolean("");
+      console.log(bEmptyString);
+
+      const bfalse = new Boolean(false);
+      console.log(bfalse);
+
+      const btrue = new Boolean(true);
+      console.log(btrue);
+
+      const btrueString = new Boolean("true");
+      console.log(btrueString);
+
+      const bfalseString = new Boolean("false");
+      console.log(bfalseString);
+
+      const bSuLin = new Boolean("Su Lin");
+      console.log(bSuLin);
+
+      const bArrayProto = new Boolean([]);
+      console.log(bArrayProto);
+
+
+      const bObjProto = new Boolean({});
+      console.log(bObjProto);
+
+    </script>
+  </body>
+</html>
