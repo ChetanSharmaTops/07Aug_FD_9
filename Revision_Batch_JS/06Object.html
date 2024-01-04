@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object In JS</title>
+</head>
+<body>
+    <h1>Object In JS</h1>
+    <script>
+        let details = {
+            // key: value,
+            firstName: 'Chetan',
+            lastName: 'Sharma',
+            facultyOf: 'FrontEnd Technology',
+            contactNo: 123456789,
+            isHandsome: true,
+            marriedStatus: undefined,
+        }
+
+        console.log(details);
+        console.log(details.facultyOf);
+        console.log(details.firstName);
+        // details.facultyOf = 'fullstack'
+
+        console.log(details.facultyOf =  'fullstack');
+        console.log(details.facultyOf);
+        console.log(details);
+
+        for (const key in details) {
+                const element = details[key];
+                console.log(element);
+            }
+    </script>
+</body>
+</html>
