@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loop In JS</title>
-</head>
-<body>
+  </head>
+  <body>
+    <button onclick="Increment()">Increment</button>
     <script>
-        // loop in js 
+      // loop in js
 
-        let arr = [10,20,30,40,50,60,70,80]
-        // for (let i = 0; i < arr.length; i++) {
-        //     // console.log(i);  // index value
-        //     // console.log(arr);  // arr ko print 
-        //     console.log(arr[i]);  // arr ko 1 by 1 iterate krwa rha hai 
-            
-        // }
+      let arr = [10, 20, 30, 40, 50, 60, 70, 80];
+      // console.log(arr);
+      // console.log(arr.length);
 
-        //     let i = 0
-        // while (i < arr.length) {
-        //     console.log(arr[i]);
-        //     i++
-        // }
+      // for (let i = 0; i < arr.length; i++) {
+      //     // console.log(i);  // index value
+      //     // console.log(arr);  // arr ko print
+      //     console.log(arr[i]);  // arr ko 1 by 1 iterate krwa rha hai
 
-        //     let i = 0;
-        // do {
-        //     console.log(arr[i]);
-        //     i++
-        // } while (i < arr.length);
-        // } while (condition);
+      // }
+
+      //   let i = 0;
+      //   while (i < arr.length) {
+      //     console.log(arr[i]);
+      //     i++;
+      //   }
+
+    //   let i = 0;
+    //   do {
+          // console.log(arr[i]);
+        //   i++;
+    //   } while (i < arr.length);
+    //   } while (condition);
+
+    //   for (const iterator of arr) {
+    //       console.log(iterator);
+    //   }
+      
+
+    // arr.forEach(element => {
+    //     console.log(element);    
+    // });
 
 
 
-        // for (const iterator of arr) {
-        //     console.log(iterator);
-        // }
+    let i = 0
+    function Increment() {
+        i++
+        console.log(i);
+    }
+
     </script>
-</body>
+  </body>
 </html>
