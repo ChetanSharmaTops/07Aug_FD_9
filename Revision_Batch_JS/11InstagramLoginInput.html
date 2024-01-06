@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Input</title>
+    <style>
+        input{
+            padding: 15px 50px 0px 0px;
+        }
+        .wraper{
+            position: relative;
+            width: 220px;
+            border: 1px solid black;
+        }
+        label{
+            position: absolute;
+            top: 10px;
+            font-size: 15px;
+            font-weight: lighter;
+            color: grey;
+        }
+        #btn{
+            position: absolute;
+            display: none;
+            bottom: 5px;
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instagram Login Input</h1>
+    <hr>
+    <div class="wraper">
+        <label for="uname" id="label1">Enter Your User Name</label>
+        <input type="text" name="uname" id="uname" oninput="upperChalaJaye(this, 'label1')">
+    </div>
+    <br>
+    <div class="wraper">
+        <label for="upass" id="label2">Enter Your User password</label>
+        <input type="password" name="upass" id="upass" oninput="upperChalaJaye(this, 'label2')">
+        <button onclick="showPassword()" id="btn">Show</button>
+    </div>
+        
+    <script>
+        function upperChalaJaye(koibhi, kuchbhi) {
+            // console.log(koibhi);
+            //     console.log(kuchbhi);
+            // let inpData = document.getElementById('uname');
+            if (koibhi.value == '') {
+                document.getElementById(kuchbhi).style.position = 'absolute'
+                document.getElementById(kuchbhi).style.top = '10px'
+                document.getElementById('btn').style.display = 'none'
+
+                console.log(koibhi);
+                console.log(kuchbhi);
+                console.log('niche jao');
+            }else{
+                document.getElementById(kuchbhi).style.top = '0px'
+                document.getElementById('btn').style.display = 'block'
+                console.log(koibhi);
+                console.log(kuchbhi);
+                console.log('upper jao');
+
+
+            }
+        }
+        function showPassword() {
+            let inpData = document.getElementById('upass');
+            if (inpData.type == 'password') {
+                inpData.type = 'text'
+            }else{
+                inpData.type = 'password'
+
+            }
+        }
+
+
+
+
+        function addTwoNumber(a,b) {
+            return a+ b
+        }
+
+        console.log(addTwoNumber(4,5));
+        console.log(addTwoNumber(6,8));
+    </script>
+
+</body>
+</html>
