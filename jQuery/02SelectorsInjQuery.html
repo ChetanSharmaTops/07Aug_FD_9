@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors In jQuery</title>
+  </head>
+  <body>
+    <h1>Selectors In jQuery</h1>
+    <p>Element Selector</p>
+    <button class="btnClass">Class Selector</button>
+    <button id="btnId">ID Selector</button>
+
+    <!-- jquery file  -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- script  -->
+
+    <script>
+      $(document).ready(function () {
+        // Unvirsal Selector
+
+        // $('*').click(function () {
+        //     console.log('Unvirsal Selector');
+        // })
+
+        // Element Selector
+
+        $("p").click(function () {
+          console.log("Element Selector");
+        });
+
+        // Class Selector
+
+        $(".btnClass").click(function () {
+          console.log("Class Selector");
+        });
+
+        // Id Selector
+
+        $("#btnId").click(function () {
+          console.log("Id Selector");
+        });
+      });
+    </script>
+  </body>
+</html>

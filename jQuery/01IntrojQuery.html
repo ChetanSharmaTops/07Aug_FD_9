@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction To jQuery</title>
+  </head>
+  <body>
+    <h1>Introduction To jQuery</h1>
+
+    <!-- jquery CDN file  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery Downloaded file  -->
+
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+
+    <!-- Custom Script  -->
+
+    <script>
+      // console.log(jQuery);
+    //   console.log($);
+
+
+    // Syntax of jQuery
+
+    // $(Selector).action(function () {
+    //     // Code to be executed
+    // });
+
+
+    $(document).ready(function () {
+    // $(function () {
+       
+        // jo bhi code isme aayega 
+
+        $('h1').click(function () {
+            console.log('Namaste Bharat');
+        })
+
+    });
+    </script>
+  </body>
+</html>

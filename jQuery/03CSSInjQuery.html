@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS In jQuery</title>
+  </head>
+  <body>
+    <h1>CSS In jQuery</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ea.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ea.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ea.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ea.
+    </p>
+
+    <!-- jQuery -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+        // Method 1
+
+        // $("h1").css('color', 'red')
+
+        // Method 2
+
+        // $("p").css({'color': 'khaki', 'backgroundColor': 'Brown', 'fontSize': '30px'})
+
+        // Method 3
+
+        $("body").css({
+          backgroundColor: "crimson",
+          textAlign: "center",
+          color: "white",
+          fontSize: "30px",
+        });
+      });
+    </script>
+  </body>
+</html>
