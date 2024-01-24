@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event In jQuery</title>
+  </head>
+  <body>
+    <h1>Mouse Event In jQuery</h1>
+    
+    <hr />
+    <div class="box">This Is The Magic Of jQuery</div>
+
+    <!-- jQuery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Script In Which we are including jquery CSS  -->
+
+    <script>
+      $("body").css({
+        backgroundColor: "tan",
+        textAlign: "center",
+      });
+      $("h1").css({
+        fontSize: "50px",
+        color: "brown",
+      });
+      $("button").css({
+        fontSize: "20px",
+        color: "khaki",
+        backgroundColor: "brown",
+        padding: "10px 30px",
+        borderRadius: "20px",
+      });
+      $(".box").css({
+        fontSize: "30px",
+        color: "white",
+        backgroundColor: "blueviolet",
+        padding: "10px 30px",
+        margin: "10px 30px",
+        borderRadius: "20px",
+        height: "200px",
+      });
+    </script>
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+        // click
+
+        $(".box").click(function () {
+          $(".box").css({backgroundColor: 'teal', color: 'khaki'});
+        });
+
+        // Double Click
+
+        $(".box").dblclick(function () {
+          $(".box").css({backgroundColor: 'crimson', color: 'white'});
+
+        });
+
+
+        $(".box").mouseenter(function () {
+          $(".box").css({backgroundColor: 'black', color: 'white'});
+
+        });
+
+
+        $(".box").mouseleave(function () {
+          $(".box").css({backgroundColor: 'brown', color: 'white'});
+
+        });
+
+
+        $(".box").mousedown(function () {
+          $(".box").css({backgroundColor: 'pink', color: 'black'});
+
+        });
+
+
+        $(".box").mouseup(function () {
+          $(".box").css({backgroundColor: 'blue', color: 'white'});
+
+        });
+
+
+      
+
+   
+      });
+    </script>
+  </body>
+</html>

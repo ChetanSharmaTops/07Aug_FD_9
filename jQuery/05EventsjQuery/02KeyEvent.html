@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>key Event In jQuery</title>
+  </head>
+  <body>
+    <h1>key Event In jQuery</h1>
+    <hr>
+    <input type="text">
+    <hr />
+    <div class="box">This Is The Magic Of jQuery</div>
+
+    <!-- jQuery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Script In Which we are including jquery CSS  -->
+
+    <script>
+      $("body").css({
+        backgroundColor: "tan",
+        textAlign: "center",
+      });
+      $("h1").css({
+        fontSize: "50px",
+        color: "brown",
+      });
+      $("button").css({
+        fontSize: "20px",
+        color: "khaki",
+        backgroundColor: "brown",
+        padding: "10px 30px",
+        borderRadius: "20px",
+      });
+      $(".box").css({
+        fontSize: "30px",
+        color: "white",
+        backgroundColor: "blueviolet",
+        padding: "10px 30px",
+        margin: "10px 30px",
+        borderRadius: "20px",
+        height: "200px",
+      });
+    </script>
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+        // key up
+
+        $("input").keyup(function () {
+          $(".box").css({backgroundColor: 'teal', color: 'khaki'});
+        });
+
+        // key down
+
+        $("input").keydown(function () {
+          $(".box").css({backgroundColor: 'crimson', color: 'white'});
+
+        });
+
+        // key press 
+
+        // $("input").keypress(function () {
+        //   $(".box").css({backgroundColor: 'crimson', color: 'white'});
+        
+
+        // });
+
+
+
+
+    
+
+
+      
+
+   
+      });
+    </script>
+  </body>
+</html>
