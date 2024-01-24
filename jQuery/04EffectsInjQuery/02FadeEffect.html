@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hide Show Effect In jQuery</title>
+    <title>Fade Effect In jQuery</title>
   </head>
   <body>
-    <h1>Hide Show Effect In jQuery</h1>
+    <h1>Fade Effect In jQuery</h1>
     <hr />
-    <button class="btnHide">Hide</button>
-    <button class="btnShow">Show</button>
-    <button class="btnToggle">Toggle</button>
+    <button class="btnFadeIn">Fade In</button>
+    <button class="btnFadeOut">Fade Out</button>
+    <button class="btnFadeToggle">Fade Toggle</button>
+    <button class="btnFadeTo">Fade To</button>
     <hr />
     <div class="box">This Is The Magic Of jQuery</div>
 
@@ -50,22 +51,28 @@
 
     <script>
       $(document).ready(function () {
-        // Hide
+        // Fade in
 
-        $(".btnHide").click(function () {
-          $(".box").hide();
+        $(".btnFadeIn").click(function () {
+          $(".box").fadeIn(2000);
         });
 
-        // Show
+        // Fade Out
 
-        $(".btnShow").click(function () {
-          $(".box").show();
+        $(".btnFadeOut").click(function () {
+          $(".box").fadeOut(2000);
         });
 
-        // Toggle
+        // Fade Toggle
 
-        $(".btnToggle").click(function () {
-          $(".box").toggle();
+        $(".btnFadeToggle").click(function () {
+          $(".box").fadeToggle(3000);
+        });
+
+        // Fade To
+
+        $(".btnFadeTo").click(function () {
+          $(".box").fadeTo(3000, 0.5);
         });
       });
     </script>

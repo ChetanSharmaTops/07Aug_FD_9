@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckBox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 30px;
+      }
+      nav {
+        background-color: crimson;
+        color: aliceblue;
+        position: relative;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style-type: none;
+        padding: 10px 30px;
+      }
+      .check {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      @media (max-width: 576px) {
+        .check {
+          display: block;
+          top: 10px;
+        }
+        .search {
+          display: none;
+        }
+        input:checked + .navbar {
+          display: block;
+        }
+        .navbar {
+          display: none;
+          border: 5px solid lime;
+          color: white;
+          background-color: black;
+          position: absolute;
+          width: 30%;
+          top: 35px;
+          right: 0;
+          text-align: center;
+          animation-name: magic;
+          animation-duration: 2s;
+        }
+
+        @keyframes magic {
+            from{
+                right: -100px;
+            }
+            to{
+                right: 0px;
+            }
+            
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="row">
+      <div class="logo"><h3>logo</h3></div>
+      <div class="search">
+        <h4>search bar</h4>
+      </div>
+      <input type="checkbox" class="check" />
+
+      <ul class="navbar row">
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+        <li>Test</li>
+      </ul>
+    </nav>
+  </body>
+</html>

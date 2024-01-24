@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hide Show Effect In jQuery</title>
+    <title>Slide Effect In jQuery</title>
   </head>
   <body>
-    <h1>Hide Show Effect In jQuery</h1>
+    <h1>Slide Effect In jQuery</h1>
     <hr />
-    <button class="btnHide">Hide</button>
-    <button class="btnShow">Show</button>
-    <button class="btnToggle">Toggle</button>
+    <button class="btnSlideUp">Slide Up</button>
+    <button class="btnSlidedown">Slide Down</button>
+    <button class="btnSlideToggle">Slide Toggle</button>
     <hr />
     <div class="box">This Is The Magic Of jQuery</div>
 
@@ -43,6 +43,7 @@
         padding: "10px 30px",
         margin: "10px 30px",
         borderRadius: "20px",
+        height: "200px",
       });
     </script>
 
@@ -50,23 +51,25 @@
 
     <script>
       $(document).ready(function () {
-        // Hide
+        // Slide Up
 
-        $(".btnHide").click(function () {
-          $(".box").hide();
+        $(".btnSlideUp").click(function () {
+          $(".box").slideUp(2000);
         });
 
-        // Show
+        // Slide Down
 
-        $(".btnShow").click(function () {
-          $(".box").show();
+        $(".btnSlidedown").click(function () {
+          $(".box").slideDown(2000);
         });
 
-        // Toggle
+        // Slide Toggle
 
-        $(".btnToggle").click(function () {
-          $(".box").toggle();
+        $(".btnSlideToggle").click(function () {
+          $(".box").slideToggle(3000);
         });
+
+   
       });
     </script>
   </body>
