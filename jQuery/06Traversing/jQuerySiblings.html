@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery siblings In jQuery</title>
+  </head>
+  <body>
+    body
+    <div class="great-grand-parent">
+      great-grand-parent
+      <div class="grand-parent">
+        grand-parent
+        <div class="parent">
+          parent
+          <div class="child">Child one</div>
+          <div class="child">Child Two</div>
+        </div>
+        <div class="parent">
+          parent
+          <div class="child">Child one</div>
+          <div class="child">Child Two</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Script In Which we are including jquery CSS  -->
+
+    <script>
+      $("*").css({
+        backgroundColor: "tan",
+        textAlign: "center",
+        margin: "20px",
+        fontSize: "30px",
+      });
+    
+      
+      
+    </script>
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+
+
+        // siblings 
+        
+        $(".child").siblings().css({ border: "3px solid red"});
+        $(".parent").siblings().css({ border: "3px solid green"});
+      
+
+        
+
+
+     
+       
+      });
+    </script>
+  </body>
+</html>
