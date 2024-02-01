@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Remove In jQuery</title>
+    <style>
+        .tarun{
+            background-color: orangered;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Add Remove In jQuery</h1>
+    <hr>
+    <div class="box">This Is The Magic Of jQuery</div>
+    <!-- <div class="box1">This Is The Magic Of jQuery</div> -->
+    <hr>
+    <button id="btnAdd">Add Class</button>
+    <button id="btnRemove">Remove Class</button>
+
+    <!-- jQuery -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- Script In Which we are including jquery CSS  -->
+
+    <script>
+      $("body").css({
+        backgroundColor: "tan",
+        textAlign: "center",
+      });
+      $("h1").css({
+        fontSize: "50px",
+        color: "brown",
+      });
+      $("button").css({
+        fontSize: "20px",
+        color: "khaki",
+        backgroundColor: "brown",
+        padding: "10px 30px",
+        borderRadius: "20px",
+      });
+      $(".box").css({
+        fontSize: "30px",
+        color: "white",
+        // backgroundColor: "blueviolet",
+        padding: "10px 30px",
+        margin: "10px 30px",
+        borderRadius: "20px",
+        height: "200px",
+      });
+    </script>
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+        // key up
+
+        $("#btnAdd").click(function () {
+          $(".box").addClass('tarun');
+        //   $(".box, .box1").addClass('tarun');
+        });
+        $("#btnRemove").click(function () {
+          $(".box").removeClass('tarun');
+        });
+
+      
+
+   
+      });
+    </script>
+  </body>
+</html>
