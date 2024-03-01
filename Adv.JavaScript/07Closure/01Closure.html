@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure IN JS</title>
+  </head>
+  <body>
+    <h1>Closure IN JS</h1>
+    <h2>
+      A function bundled together with its lexical environment makes a Closure.
+    </h2>
+    <h3>Functions Are the heart of Javascript</h3>
+    <p>
+      Closure in JavaScript is a form of lexical scoping used to preserve
+      variables from the outer scope of a function in the inner scope of a
+      function. Lexical scoping is the process used to define the scope of a
+      variable by its position in the source code.
+    </p>
+    <p>
+      A closure is the combination of a function bundled together (enclosed)
+      with references to its surrounding state (the lexical environment). In
+      other words, a closure gives you access to an outer function's scope from
+      an inner function. In JavaScript, closures are created every time a
+      function is created, at function creation time.
+    </p>
+
+    <p>
+      <b>lexical environment => </b>A lexical environment in JavaScript is a
+      data structure that stores the variables and functions that are defined in
+      the current scope and all of the outer scopes. It is also known as the
+      lexical scope or the lexical closure.
+    </p>
+
+    <script>
+      function outerOuter() {
+        let b = 20;
+        function outer() {
+          console.log(b);
+          let a = 10;
+          function inner() {
+            console.log(a);
+          }
+          inner();
+        }
+        outer();
+      }
+      outerOuter();
+    </script>
+  </body>
+</html>
