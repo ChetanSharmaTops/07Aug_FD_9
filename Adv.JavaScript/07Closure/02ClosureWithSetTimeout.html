@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Closure with setTimeOut</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Closure with setTimeOut</h1>
     <script>
-        function outer() {
-            for (let i = 0; i <= 5; i++) {
-            // for (var i = 0; i <= 5; i++) {
-                setTimeout(() => {
-                    console.log(i);
-                }, i*2000);
-            }
-        }
-        outer()
+      //   function outer() {
+      //     for (let i = 0; i <= 5; i++) {
+      //       // for (var i = 0; i <= 5; i++) {
+      //       setTimeout(() => {
+      //           console.log(i);
+      //       }, i*2000);
+      //     //   setInterval(() => {
+      //     //     console.log(i);
+      //     //   }, i * 2000);
+      //     }
+      //   }
+      //   outer();
+
+      setInterval(() => {
+        console.log("set Interval");
+      }, 5000);
+
+      setTimeout(() => {
+        console.log("set TimeOut");
+      }, 4000);
     </script>
-</body>
+  </body>
 </html>
