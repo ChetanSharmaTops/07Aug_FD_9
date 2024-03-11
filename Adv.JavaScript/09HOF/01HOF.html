@@ -29,36 +29,64 @@
 
       // Question
 
-      // Area of an
+      // Area of an Circle (Writing Code in Normal Way )
 
-      let arr = [2, 4, 6, 8];
+      // let arr = [2, 4, 6, 8];
 
-      const areaOfCircle = function () {
-        let output = [];
-        for (let i = 0; i < arr.length; i++) {
-          output.push(Math.PI * (arr[i] * arr[i]));
+      // const areaOfCircle = function () {
+      //   let output = [];
+      //   for (let i = 0; i < arr.length; i++) {
+      //     output.push(Math.PI * (arr[i] * arr[i]));
+      //   }
+      //   console.log(output);
+      // };
+      // areaOfCircle();
+
+      // const circumfernceOfCircle = function () {
+      //   let output = [];
+      //   for (let i = 0; i < arr.length; i++) {
+      //     output.push(2 * (Math.PI * arr[i]));
+      //   }
+      //   console.log(output);
+      // };
+      // circumfernceOfCircle();
+
+      // const diameterOfCircle = function () {
+      //   let output = [];
+      //   for (let i = 0; i < arr.length; i++) {
+      //     output.push(arr[i] * arr[i]);
+      //   }
+      //   console.log(output);
+      // };
+      // diameterOfCircle();
+
+      // When We are writing this in HOF
+
+
+      let radius = [2, 4, 6, 8];
+
+
+      const calculate = function (radius, logic) {
+        const output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(logic(radius[i]));
         }
-        console.log(output);
+        return output;
       };
-      areaOfCircle();
 
-      const circumfernceOfCircle = function () {
-        let output = [];
-        for (let i = 0; i < arr.length; i++) {
-          output.push(2 * (Math.PI * arr[i]));
-        }
-        console.log(output);
+      const area = function (radius) {
+        return Math.PI * radius * radius;
       };
-      circumfernceOfCircle();
+      const circumference = function (radius) {
+        return 2 * Math.PI * radius;
+      };
+      const diameter = function (radius) {
+        return 2 * radius;
+      };
 
-      const diameterOfCircle = function () {
-        let output = [];
-        for (let i = 0; i < arr.length; i++) {
-          output.push(arr[i] * arr[i]);
-        }
-        console.log(output);
-      };
-      diameterOfCircle();
+      console.log(calculate(radius, area));
+      console.log(calculate(radius, circumference));
+      console.log(calculate(radius, diameter));
     </script>
   </body>
 </html>
